@@ -1,6 +1,6 @@
 # Notes-App
 
-Notes app implemented using React and Node.js that saves data to a PostgreSQL database.
+Notes app implemented using React and Node.js that saves data to a PostgreSQL database (supabase).
 
 Skills: React, Node.js, PostgreSQL, Prisma
 

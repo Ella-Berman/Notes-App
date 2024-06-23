@@ -1,0 +1,111 @@
+/* Style the App.tsx components */
+
+body{
+  margin: 20px;
+  background-color: rgba(6, 6, 6, 0.184);
+}
+
+.app-container{
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 600px){
+  .app-container{
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: 20px;
+  }
+}
+
+.notes-grid {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(250px, 1fr)
+  );
+  grid-auto-rows: minmax(250px, auto);
+  gap: 20px;
+}
+
+.note-item{
+  display:flex;
+  flex-direction: column;
+  border: 1px solid gray;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: rgb(253, 191, 201);
+  box-shadow: 0px 0px 0px
+    rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.notes-header{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.notes-header-button{
+  font-size: 16px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  max-width: fit-content;
+}
+
+h2{
+  margin: 0;
+}
+
+.note-form{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+textarea,
+input {
+  border-radius: 5px;
+  border: 1px solid black;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.note-form button {
+  border-radius: 5px;
+  background-color: rgb(252, 133, 153);
+  border:1px solid black;
+  padding: 10px;
+  gap: 20px;
+  font-size: 16px;
+  color: whitesmoke;
+}
+
+.note-form button:hover{
+  background-color: rgb(246, 79, 107);
+  cursor: pointer;
+}
+
+.edit-buttons{
+  display: flex;
+  justify-content: space-evenly;
+  gap: 5px;
+}
+
+.edit-buttons button{
+  flex: 1;
+}
+
+.edit-buttons button:first-of-type{
+  background-color: rgb(104, 182, 138);
+  color: white;
+}
+
+.edit-buttons button:last-of-type{
+  background-color: lightblue;
+  color: white;
+}
+
+.edit-buttons button:hover{
+  background-color: red;
+  cursor: pointer;
+}

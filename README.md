@@ -4,7 +4,7 @@ Notes app implemented using React and Node.js that saves data to a PostgreSQL da
 
 Skills: React, Node.js, PostgreSQL, Prisma
 
-Implemented functionality to display, add, edit, and delete notes using React. Linked note data to a PostgreSQL database using Prisma.
+Built app from scratch. Implemented functionality to display, add, edit, and delete notes using React. Linked note data to a PostgreSQL database using Prisma.
 
 To run app locally:
 
